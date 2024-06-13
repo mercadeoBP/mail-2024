@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Bayport factura electrónica</title>
+    <style>
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #ffffff;
+                /* Color de fondo para el modo claro */
+            }
+
+            a {
+                color: #0F1141 !important;
+            }
+
+            p {
+                color: #0F1141;
+                font-family: 'Lato', sans-serif;
+                /* Color de texto para el modo claro */
+            }
+
+            /* Agrega otros estilos específicos para el modo claro aquí */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333333;
+                /* Color de fondo para el modo oscuro */
+            }
+
+            a {
+                color: #ffffff !important;
+            }
+
+            p {
+                color: #ffffff;
+                font-family: 'Lato', sans-serif;
+                /* Color de texto para el modo oscuro */
+            }
+
+            /* Agrega otros estilos específicos para el modo oscuro aquí */
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <table align="center"
+		   cellpadding="0"
+		   cellspacing="0"
+		   width="600px"
+		   style="border-collapse: collapse;">
+        <!-- Header -->
+        <tr>
+            <td colspan="2"
+				style="width:600px;
+					   height:55px;
+					   background: url(https://raw.githubusercontent.com/mercadeoBP/mail-2024/main/4-formatos/bayport-factura-clientes/src/1x/factura_l-bgheader.png);
+					   background-size:100%;
+					   background-repeat:no-repeat;
+					   padding:0px;
+					   margin:0px;">
+                <table cellpadding="0"
+					   cellspacing="0"
+					   style="width:552px;
+							  height:20px;
+							  margin-left: 24px;
+							  margin-right: 24px;
+							  padding:0px;
+							  margin-bottom:0px;
+							  margin-top:0px;"> 
+                    <tr>
+                        <td style="width:276px;
+								   height: 20px;
+								   margin-top: 0px;
+								   margin-right: 0px;
+								   margin-bottom: 0px;
+								   margin-left: 0px;
+								   padding-left: 0px;
+								   padding-right: 0px;
+								   padding-bottom: 1px;
+								   padding-top: 0px;
+								   font-size: 13px;
+								   line-height: 0px;"	
+							align="left">
+                            <img src="https://raw.githubusercontent.com/mercadeoBP/mail-2024/main/4-formatos/bayport-factura-clientes/src/2x/factura_l-logo.png"
+								 style="width:77px;
+										height:19px;
+										padding:0px;
+										margin: 0px;"
+								 alt="Logo Bayport">
+                        </td>
+                        <td style="width:276px;
+								   height: 20px;
+								   margin-top: 0px;
+								   margin-right: 0px;
+								   margin-bottom: 0px;
+								   margin-left: 0px;
+								   padding-left: 0px;
+								   padding-right: 0px;
+								   padding-bottom: 1px;
+								   padding-top: 0px;	
+								   font-size: 13px;
+								   font-weight: 600;
+								   line-height: 0px;
+								   color: #ffffff"
+							align="right">
+                            <p stye
+							   >Bogotá, 1/31/2022 7:04:26 PM</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- Imagen de encabezado -->
+        <tr>
+            <td align="center;"
+				style="width: 600px;
+					   height: auto;
+					   padding: 0px;
+					   margin: 0px;">
+                <img src="https://raw.githubusercontent.com/mercadeoBP/mail-2024/main/4-formatos/bayport-factura-clientes/src/2x/factura_l-bgbanner.png"
+					 alt="bgheader" 
+					 style="width: 600px;
+							height: auto;
+							padding: 0px;
+							margin: 0px;">
+            </td>
+        </tr>
+		<!-- Contenido -->
+        <tr>
+            <td align="center" 
+				style="padding-left: 30px;
+					   padding-right: 30px;
+					   padding-top: 0px;
+					   padding-bottom: 0px;
+					   margin: 0px;">
+				<p style="font-size: 22px;
+						  line-height: 1.4;
+						  text-align: left;
+						  margin-top: 0px;
+						  margin-bottom:24px;">
+					<b>Hola, [Nombre cliente]</b>
+				</p>
+				<p style="font-size: 16px;
+						  line-height: 1.4; 
+						  text-align: left;
+						  margin-top: 0px;
+						  margin-bottom:24px;">
+					De acuerdo con la Resolución 000010 de la DIAN del 6 de febrero del año 2018, a partir del 1 de septiembre de 2018 y en adelante, debemos expedir a todos nuestros clientes factura electrónica en la que se evidencien los conceptos causados mensualmente del Crédito de Libranza que adquiriste con nosotros. Documento que estamos remitiendo a tu correo electrónico registrado.<br>
+					<br>
+					<b>¡RECUERDA! Este documento es de carácter informativo y no requiere que realices ningún pago por concepto de este, ya que el pago de tu crédito de libranza es por medio de descuento de nómina/mesada pensional a través de tu pagaduría.</b><br>
+					<br>
+					Para dar cumplimiento a los términos del artículo 773 del Código de Comercio te invitamos a realizar la revisión dentro de los tres (3) días hábiles siguientes a la recepción y/o aceptación o rechazo del documento electrónico, de lo contrario se entenderá como aceptado.<br>
+					<br>
+					Haz clic en el siguiente link para ingresar a aprobar o rechazar tu factura:
+				</p>
+			</td>
+		</tr>
+		<!--call to action-->
+		<tr>
+			<td style="padding-left: 190px;
+					   padding-right: 190px;
+					   width: 220px;
+					   height: 50px;
+					   text-align:center;">
+				<a style="color: #ffffff;
+						  text-decoration: none;
+						  display:block;" 
+				   href="Aqui va el link">
+					<div style="background:#5C60C3;
+								border-radius: 4px;
+								padding: 16px;
+								text-align: center;
+								color:#ffffff;
+								font-size: 18px;">
+						<u>
+							<b>
+								Ingresar
+							</b>
+						</u>
+					</div>
+				</a>
+			</td>
+		</tr>
+		<!-- Nota -->
+        <tr>
+            <td align="center" 
+				style="padding-left: 150px;
+					   padding-right: 150px;
+					   padding-top: 20px;
+					   padding-bottom: 0px;
+					   margin: 0px;">
+				<p style="font-size: 12px;
+						  line-height: 1.1;
+						  text-align: center;
+						  margin-top: 0px;
+						  margin-bottom:24px;">
+					<b>Nota:</b> La información transmitida a través de este correo electrónico es confidencial y está dirigida únicamente a su destinatario. Su reproducción a terceros está prohibido.
+				</p>
+            </td>
+        </tr>
+        <!-- Imagen de equipo -->
+        <tr>
+            <td align="right"
+				style="width:468px;
+					   height:152px;
+					   background: url( https://raw.githubusercontent.com/mercadeoBP/mail-2024/main/1-template-2024/template1/src/1x/l-bgfirma.png);
+					   background-repeat: no-repeat;
+					   background-position: right;
+					   padding: 0px;
+					   margin: 0px;">
+                 <p style="font-size: 14px;
+						   line-height: 18px;
+						   text-align:right;
+						   padding-right: 108px">
+					Equipo
+					 <br>
+				<b style="font-size: 18px;">
+					Bayport Colombia
+					 <br>
+					 <br>
+					 </b>
+					 </p>
+            </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+            <td align="center"
+				style="background: url(https://raw.githubusercontent.com/mercadeoBP/mail-2024/main/4-formatos/bayport-factura-clientes/src/1x/factura_l-bgfooter.png);
+					   background-size: 100%;
+					   background-repeat: no-repeat;
+					   padding: 0px;
+					   margin-bottom: 0px;
+					   margin-left: 0px;
+					   margin-right: 0px;
+					   margin-top: 12px;
+					   width:600px;
+					   height:100px;">
+                <table cellpadding="0"
+					   cellspacing="0"
+					   style="width:468px;
+							  margin-left: 66px;
+							  margin-right: 66px;
+							  padding: 0px;">
+                   <hr style="margin-top: 5px;
+						   solid #0F113E;
+						   width: 468px">
+					<tr>
+                        <td align="right"
+							style="width:234px;
+								   height: auto;
+								   margin: 0px;
+								   padding-bottom: 15px;">
+                            <p style="font-size: 12px;
+									  text-align: left;">
+								© Bayport Colombia S.A.<br>
+								Todos los derechos reservados
+							</p>
+                        </td>
+						<td align="right"
+							style="width:234px;
+								   height: auto;
+								   margin: 0px;
+								   padding-bottom: 15px;">
+                            <img src="https://raw.githubusercontent.com/mercadeoBP/mail-2024/main/4-formatos/bayport-factura-clientes/src/2x/factura_olimpia.png"
+								 style="width:108px;
+										height:24px;
+										padding:0px;
+										margin: 0px;"
+								 alt="Logo">
+                        </td>
+                    </tr>
+                </table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
