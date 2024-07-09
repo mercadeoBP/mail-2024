@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra de cartera refinanciación</title>
+    <title>Libre inversión refinanciación</title>
 </head>
 
 <style>
@@ -136,7 +136,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img class="w-100" src="https://storage-masivdrive.masivapp.com/4783/90338731-4821-43ef-a164-f0ec8d042b45/fc6ae08a-79e1-494d-8fa0-b49e965060ab.png" alt="">
+                                    <img class="w-100" src="https://storage-masivdrive.masivapp.com/4783/90338731-4821-43ef-a164-f0ec8d042b45/90b4bc53-fc84-4bfb-aa36-29f04de319dc.png" alt="">
                                 </td>
                             </tr>
                         </tbody>
@@ -150,10 +150,76 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <p class="display-2"><b>Hola, {{NOMBRE_CLIENTE}}</b></p>
-                                    <p class="f-18">Te damos la bienvenida a Bayport y adjunto te enviamos 
-                                        un resumen detallado de las condiciones del crédito 
-                                        de libranza que adquiriste con nosotros.</p>
+                                    <p style="font-size: 22px;">
+										<b>Hola, {{NOMBRE_CLIENTE}}
+										</b>
+                                    <p style="font-size: 16px;
+											  line-height: 1.4;">
+										Te damos la bienvenida a Bayport y adjunto te enviamos un resumen detallado de las condiciones del crédito de libranza y entrega de los siguientes documentos firmados electrónicamente con ocasión al crédito de libranza con Bayport Colombia S.A.:
+									</p>
+									 <ul style="font-size: 20px;
+												line-height: 0.4;
+												color: #A7AAF4;
+												padding-left: 40px;">
+										 <li style="margin-bottom: 2px;">
+											 <p style="color: #0F113E;
+													   font-size: 16px;
+													   line-height: 1.4;
+													   margin: 0px;">
+												 Contrato de Crédito de Libranza
+										 </p>
+										 </li>
+										<li style="margin-bottom: 2px;">
+											 <p style="color: #0F113E;
+													   font-size: 16px;
+													   line-height: 1.4;
+													   margin: 0px;">
+												 Libranza
+										 </p>
+										 </li>
+										<li style="margin-bottom: 2px;">
+											 <p style="color: #0F113E;
+													   font-size: 16px;
+													   line-height: 1.4;
+													   margin: 0px;">
+												 Pólizas de seguro de vida deudores
+										 </p>
+										 </li>
+										<li style="margin-bottom: 2px;">
+											 <p style="color: #0F113E;
+													   font-size: 16px;
+													   line-height: 1.4;
+													   margin: 0px;">
+												 Seguro voluntario 
+											<b style="font-size: 12px;
+													  font-weight: 200;
+													  margin: 0px 0px 0px 0px;">(si aplica)
+											</b>
+										</p>
+										 </li>
+										<li style="margin-bottom: 2px;">
+											 <p style="color: #0F113E;
+													   font-size: 16px;
+													   line-height: 1.4;
+													   margin: 0px;">
+												 Garantía
+											<b style="font-size: 12px;
+													  font-weight: 200;
+													  margin: 0px 0px 0px 0px;">
+												(Amparo Adicional de Protección Económica Complementaria del Tomador)
+											</b>
+										</p>
+										 </li>
+									</ul>
+									<p style="font-size: 16px;
+											  line-height: 1.4;">
+										Recuerda que Los documentos firmados electrónicamente bajo las disposiciones del Decreto 2364 de 2012 y puedes consultarlos también a través
+										<a style="font-size: 16px;
+												  color:  #000BFF;"
+										   href="https://portalclientes.col.prod.bayport-digital.com/portalclientes/">
+											<u>Portal de clientes.</u>
+										</a>
+									</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -263,7 +329,7 @@
 
                                             <tr>
                                                 <td class="w-50">
-                                                    Tasa interés*
+                                                    Tasa interés corriente*
                                                 </td>
                                                 <td class="w-50">
                                                     <b>{{TASA_INTERES}}%</b>
@@ -283,14 +349,14 @@
                                                 <td class="w-50"
 													style="line-height: 0.9;
 														   padding-right: 40px">
-                                                  Garantía
+                                                  Garantía 
 													<b style="font-size: 12px;
 															  font-weight: 200;
 															  margin: 0px 0px 0px 0px;">
 														(Amparo Adicional de Protección Económica Complementaria del Tomador)</b>**
                                               </td>
                                                 <td class="w-50">
-                                                    <b>{{TASA_AVAL}}% </b>
+                                                    <b>{{TASA_GARANTIA}}%</b>
                                                 </td>
                                             </tr>
 
@@ -317,7 +383,7 @@
                                                     Comisión de corretaje
                                                 </td>
                                                 <td class="w-50">
-                                                    <b>{{TASA_COMISION}}%</b> <b>{{VARIABLE_IVA}}</b>
+                                                     <b>{{TASA_COMISION}}%</b> <b>{{VARIABLE_IVA}}</b>
                                                 </td>
                                             </tr>
 
@@ -329,7 +395,7 @@
                             <!--Disclaimer informacion credito-->
                             <tr>
                                 <td class="f-12">
-                                    <p>*N.M.V. = Nominal mes vencido <br>
+                                    <p>*N.M.V.: Nominal Mes Vencido<br>
                                         ** El porcentaje es calculado sobre el monto aprobado</p>
                                 </td>
                             </tr>
@@ -374,15 +440,6 @@
 
                                             <tr>
                                                 <td class="w-50">
-                                                    Compra(s) de cartera
-                                                </td>
-                                                <td class="w-50">
-                                                    <b>${{VALOR_COMPRA_CARTERA}}</b>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="w-50">
                                                     Descuento Cheque / Transferencia
                                                 </td>
                                                 <td class="w-50">
@@ -401,7 +458,7 @@
 														(Amparo Adicional de Protección Económica Complementaria del Tomador)</b>
                                                 </td>
                                                 <td class="w-50">
-                                                    <b>${{VALOR_AVAL}}</b>
+                                                    <b>${{VALOR_GARANTIA}}</b>
                                                 </td>
                                             </tr>
 
@@ -416,8 +473,8 @@
 
                                             <tr>
                                                 <td class="w-50">
-                                                    Comisión corretaje
-                                                </td>
+                                                  Comisión de corretaje
+                                              </td>
                                                 <td class="w-50">
                                                     <b>${{VALOR_COMISION}}</b>
                                                 </td>
@@ -440,7 +497,6 @@
                 </td>
             </tr>
 
-
             <!--portal clientes-->
             <tr>
                 <td>
@@ -461,7 +517,7 @@
                                             <!--bloque pasos a-->
                                             <tr>
                                                 <!--paso 1-->
-                                                  <td style="padding-bottom: 10px;padding-top: 10px;width: 50%;background-color: white;border-radius: 4px">
+                                                    <td style="padding-bottom: 10px;padding-top: 10px;width: 50%;background-color: white;border-radius: 4px">
                                                     <table style="padding-top:16px;
 																  padding-bottom:71px;
 																  padding-left: 16px;
@@ -574,7 +630,6 @@
                 </td>
             </tr>
 
-
             <!--Notas aclaratorias-->
             <tr>
                 <td>
@@ -605,7 +660,7 @@
 										<b>
 											Nota 2: 
 										</b>
-					Al adquirir el crédito con Bayport, se adquirió un seguro de vida grupo deudor con la compañía Pan American Life.Adicionalmente, se aceptó contractualmente la Garantía 
+					Al adquirir el crédito con Bayport, se adquirió un seguro de vida grupo deudor con la compañía Pan American Life. Adicionalmente, se aceptó contractualmente la Garantía 
 										<b style="font-size: 12px;
 												  font-weight: 200;
 												  margin: 0px 0px 0px 0px;">
@@ -626,13 +681,13 @@
 										<b>
 											Nota 4:
 										</b> 
-					En caso de que la recepción del pago de la primera cuota ocurra antes de la fecha de pago esperado, no habrá lugar a devolución de dicho valor al cliente, sino que se aplicará a su crédito de conformidad con las condiciones del mismo y el cobro de interés corriente correspondiente al periodo de gracia se cobrará en forma proporcional hasta el día en que ocurra la recepción del pago.</p>
+					En caso de que la recepción del pago de la primera cuota ocurra antes de la fecha de pago esperado, no habrá lugar a devolución de dicho valor al cliente, sino que se aplicará a su crédito de conformidad con las condiciones del mismo y el cobro de interés corriente correspondiente al periodo de incorporación se cobrará en forma proporcional hasta el día en que ocurra la recepción del pago.</p>
 									<p>
 										<b>
 											Nota 5:
 										</b> 
 										
-					Con esto estás expresando la aceptación de los términos del contrato y tu obligación de cumplir con los pagos y otras condiciones de la manera estipulada. Todo lo anterior en el entendimiento de que tu aceptación es equivalente a la firma en el acuerdo, según lo establecido por la Ley No. 527 de 1999, mediante la cual se define y regula el acceso y uso de los mensajes de datos. Comercio electrónico y firmas digitales. Por favor no responder a este correo.
+					 La información que se presenta en esta carta de bienvenida hace referencia a los conceptos que aceptaste en del Contrato de Crédito de libranza con Bayport Colombia S.A.
 									</p>
                                     <p>
 										<b>
